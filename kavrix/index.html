@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kavrix — Streetwear for the Unseen</title>
+<meta name="description" content="Kavrix is a premium streetwear label. Shop hoodies, outerwear, tees and accessories built for the unseen.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>NEW DROP — FALL 01 AVAILABLE NOW</span>
+    <span>FREE SHIPPING OVER $150</span>
+    <span>LIMITED STOCK — NO RESTOCKS</span>
+    <span>DESIGNED IN-HOUSE</span>
+    <span>NEW DROP — FALL 01 AVAILABLE NOW</span>
+    <span>FREE SHIPPING OVER $150</span>
+    <span>LIMITED STOCK — NO RESTOCKS</span>
+    <span>DESIGNED IN-HOUSE</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap site-header__row">
+    <a href="index.html" class="logo">Kavrix</a>
+    <nav class="nav-links">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="shop.html#hoodie">Hoodies</a>
+      <a href="shop.html#jacket">Outerwear</a>
+    </nav>
+    <div class="header-actions">
+      <a href="cart.html" class="icon-btn" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="cart-badge is-empty" data-cart-count>0</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav__top">
+    <span class="logo">Kavrix</span>
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <div class="mobile-nav__links">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="cart.html">Cart</a>
+  </div>
+  <div class="mobile-nav__foot">Kavrix &copy; 2026 — Streetwear for the Unseen</div>
+</div>
+
+<main>
+
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="wrap hero__content">
+      <h1 class="display hero__title">Kavrix</h1>
+      <div class="hero__sub">
+        <p class="hero__tagline">Premium streetwear built in black and white. Heavyweight fabrics, oversized silhouettes, no noise.</p>
+        <div class="hero__actions">
+          <a href="shop.html" class="btn btn-invert">Shop the Drop</a>
+          <a href="#story" class="btn btn-ghost" style="border-color: var(--line-on-black); color: var(--white);">Our Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="cat-strip" aria-label="Shop by category">
+    <a class="cat-tile" href="shop.html#hoodie">
+      <span class="eyebrow">01</span>
+      <span class="cat-tile__name">Hoodies</span>
+      <span class="cat-tile__arrow">&rarr;</span>
+    </a>
+    <a class="cat-tile" href="shop.html#tee">
+      <span class="eyebrow">02</span>
+      <span class="cat-tile__name">Tees</span>
+      <span class="cat-tile__arrow">&rarr;</span>
+    </a>
+    <a class="cat-tile" href="shop.html#jacket">
+      <span class="eyebrow">03</span>
+      <span class="cat-tile__name">Outerwear</span>
+      <span class="cat-tile__arrow">&rarr;</span>
+    </a>
+    <a class="cat-tile" href="shop.html#accessory">
+      <span class="eyebrow">04</span>
+      <span class="cat-tile__name">Accessories</span>
+      <span class="cat-tile__arrow">&rarr;</span>
+    </a>
+  </nav>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" style="margin-bottom:10px;">Fall 01</p>
+          <h2 class="display section-title">Featured Drop</h2>
+        </div>
+        <a href="shop.html" class="btn btn-ghost">View All</a>
+      </div>
+      <div class="product-grid" id="featuredGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="story">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow" style="margin-bottom:16px;">The Brand</p>
+        <p class="display split__quote">"Built for those who move through the city unseen, but never unnoticed."</p>
+        <div class="split__meta">
+          <div class="split__stat"><b>2019</b><span>Founded</span></div>
+          <div class="split__stat"><b>480gsm</b><span>Heavyweight Fleece</span></div>
+          <div class="split__stat"><b>No.&nbsp;01</b><span>Limited Drops</span></div>
+        </div>
+      </div>
+      <div class="split__art">
+        <svg viewBox="0 0 200 220" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M70 40c0-16 13-28 30-28s30 12 30 28"/>
+          <path d="M50 58 20 78l14 26 16-10v106h100V94l16 10 14-26-30-20"/>
+          <path d="M70 40c-11 6-18 16-18 30v20M130 40c11 6 18 16 18 30v20"/>
+          <path d="M82 60c4 8 12 13 18 13s14-5 18-13"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="wrap">
+      <h2 class="display newsletter__title">Join the List</h2>
+      <p class="newsletter__sub">Get early access to drops, restocks, and archive sales before anyone else.</p>
+      <form class="newsletter__form" id="newsletterForm">
+        <input type="email" placeholder="Enter your email" required aria-label="Email address">
+        <button type="submit" class="btn btn-invert">Subscribe</button>
+      </form>
+      <p class="newsletter__note" id="newsletterNote"></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <span class="logo">Kavrix</span>
+        <p>Premium streetwear designed in black and white. Heavyweight fabrics. Limited runs. No restocks.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">All Products</a></li>
+          <li><a href="shop.html#hoodie">Hoodies</a></li>
+          <li><a href="shop.html#jacket">Outerwear</a></li>
+          <li><a href="shop.html#accessory">Accessories</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#story">About</a></li>
+          <li><a href="#">Journal</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Kavrix. All rights reserved.</span>
+      <a href="#top" class="back-to-top">Back to Top &uarr;</a>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/art.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

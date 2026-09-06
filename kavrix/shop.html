@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop All — Kavrix</title>
+<meta name="description" content="Shop the full Kavrix collection — hoodies, tees, outerwear, bottoms and accessories.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>NEW DROP — FALL 01 AVAILABLE NOW</span>
+    <span>FREE SHIPPING OVER $150</span>
+    <span>LIMITED STOCK — NO RESTOCKS</span>
+    <span>DESIGNED IN-HOUSE</span>
+    <span>NEW DROP — FALL 01 AVAILABLE NOW</span>
+    <span>FREE SHIPPING OVER $150</span>
+    <span>LIMITED STOCK — NO RESTOCKS</span>
+    <span>DESIGNED IN-HOUSE</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap site-header__row">
+    <a href="index.html" class="logo">Kavrix</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html" aria-current="page">Shop</a>
+      <a href="shop.html#hoodie">Hoodies</a>
+      <a href="shop.html#jacket">Outerwear</a>
+    </nav>
+    <div class="header-actions">
+      <a href="cart.html" class="icon-btn" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="cart-badge is-empty" data-cart-count>0</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav__top">
+    <span class="logo">Kavrix</span>
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <div class="mobile-nav__links">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="cart.html">Cart</a>
+  </div>
+  <div class="mobile-nav__foot">Kavrix &copy; 2026 — Streetwear for the Unseen</div>
+</div>
+
+<main>
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a> / <span>Shop All</span></div>
+  </div>
+
+  <section class="section" style="padding-top:8px;">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" style="margin-bottom:10px;">Full Collection</p>
+          <h1 class="display section-title">Shop All</h1>
+        </div>
+      </div>
+      <div class="filter-bar" id="filterBar"></div>
+      <div class="product-grid" id="shopGrid"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <span class="logo">Kavrix</span>
+        <p>Premium streetwear designed in black and white. Heavyweight fabrics. Limited runs. No restocks.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">All Products</a></li>
+          <li><a href="shop.html#hoodie">Hoodies</a></li>
+          <li><a href="shop.html#jacket">Outerwear</a></li>
+          <li><a href="shop.html#accessory">Accessories</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html#story">About</a></li>
+          <li><a href="#">Journal</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Kavrix. All rights reserved.</span>
+      <a href="#top" class="back-to-top">Back to Top &uarr;</a>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/art.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
