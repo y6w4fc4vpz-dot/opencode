@@ -9,22 +9,34 @@
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <filter id="roughen" x="-30%" y="-30%" width="160%" height="160%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3.2"/>
+    </filter>
+  </defs>
+</svg>
+
 <div class="marquee" aria-hidden="true">
   <div class="marquee__track">
+    <span>RAW. REBEL. REFINED.</span>
     <span>NEW DROP — FALL 01 AVAILABLE NOW</span>
     <span>FREE SHIPPING OVER $150</span>
     <span>LIMITED STOCK — NO RESTOCKS</span>
-    <span>DESIGNED IN-HOUSE</span>
+    <span>RAW. REBEL. REFINED.</span>
     <span>NEW DROP — FALL 01 AVAILABLE NOW</span>
     <span>FREE SHIPPING OVER $150</span>
     <span>LIMITED STOCK — NO RESTOCKS</span>
-    <span>DESIGNED IN-HOUSE</span>
   </div>
 </div>
 
 <header class="site-header">
   <div class="wrap site-header__row">
-    <a href="index.html" class="logo">Kavrix</a>
+    <a href="index.html" class="logo-mark">
+      <span class="logo-mark__icon" data-brand-mark></span>
+      <span class="logo-mark__word">Kavrix</span>
+    </a>
     <nav class="nav-links">
       <a href="index.html" aria-current="page">Home</a>
       <a href="shop.html">Shop</a>
@@ -45,7 +57,10 @@
 
 <div class="mobile-nav" id="mobileNav">
   <div class="mobile-nav__top">
-    <span class="logo">Kavrix</span>
+    <span class="logo-mark">
+      <span class="logo-mark__icon" data-brand-mark></span>
+      <span class="logo-mark__word">Kavrix</span>
+    </span>
     <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6l12 12M18 6L6 18"/></svg>
     </button>
@@ -62,12 +77,14 @@
 
   <section class="hero">
     <div class="hero__bg"></div>
+    <div class="hero__mark" data-brand-mark aria-hidden="true"></div>
     <div class="wrap hero__content">
-      <h1 class="display hero__title">Kavrix</h1>
+      <p class="hero__eyebrow">Concept: Modern Legacy</p>
+      <h1 class="gothic hero__title">Kavrix</h1>
       <div class="hero__sub">
-        <p class="hero__tagline">Premium streetwear built in black and white. Heavyweight fabrics, oversized silhouettes, no noise.</p>
+        <p class="hero__tagline">Raw. Rebel. Refined. Built for the streets, made to stand out — every detail speaks intent.</p>
         <div class="hero__actions">
-          <a href="shop.html" class="btn btn-invert">Shop the Drop</a>
+          <a href="shop.html" class="btn btn-invert">Shop the Legacy</a>
           <a href="#story" class="btn btn-ghost" style="border-color: var(--line-on-black); color: var(--white);">Our Story</a>
         </div>
       </div>
@@ -113,22 +130,15 @@
   <section class="section" id="story">
     <div class="wrap split">
       <div>
-        <p class="eyebrow" style="margin-bottom:16px;">The Brand</p>
-        <p class="display split__quote">"Built for those who move through the city unseen, but never unnoticed."</p>
+        <span class="concept-tag">Concept: Modern Legacy</span>
+        <p class="display split__quote">"Raw. Rebel. Refined. Built for the streets, made to stand out. Every detail speaks intent."</p>
         <div class="split__meta">
           <div class="split__stat"><b>2019</b><span>Founded</span></div>
-          <div class="split__stat"><b>480gsm</b><span>Heavyweight Fleece</span></div>
+          <div class="split__stat"><b>Hand-Finished</b><span>Raw Cut Panels</span></div>
           <div class="split__stat"><b>No.&nbsp;01</b><span>Limited Drops</span></div>
         </div>
       </div>
-      <div class="split__art">
-        <svg viewBox="0 0 200 220" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
-          <path d="M70 40c0-16 13-28 30-28s30 12 30 28"/>
-          <path d="M50 58 20 78l14 26 16-10v106h100V94l16 10 14-26-30-20"/>
-          <path d="M70 40c-11 6-18 16-18 30v20M130 40c11 6 18 16 18 30v20"/>
-          <path d="M82 60c4 8 12 13 18 13s14-5 18-13"/>
-        </svg>
-      </div>
+      <div class="split__art has-mark" data-brand-mark></div>
     </div>
   </section>
 
@@ -150,8 +160,11 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-col footer-brand">
-        <span class="logo">Kavrix</span>
-        <p>Premium streetwear designed in black and white. Heavyweight fabrics. Limited runs. No restocks.</p>
+        <span class="logo-mark">
+          <span class="logo-mark__icon" data-brand-mark></span>
+          <span class="logo-mark__word">Kavrix</span>
+        </span>
+        <p>Raw. Rebel. Refined. Heavyweight distressed fabrics, hand-finished hardware. Limited runs. No restocks.</p>
       </div>
       <div class="footer-col">
         <h4>Shop</h4>

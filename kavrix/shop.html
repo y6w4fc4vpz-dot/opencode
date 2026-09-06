@@ -9,22 +9,34 @@
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <filter id="roughen" x="-30%" y="-30%" width="160%" height="160%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3.2"/>
+    </filter>
+  </defs>
+</svg>
+
 <div class="marquee" aria-hidden="true">
   <div class="marquee__track">
+    <span>RAW. REBEL. REFINED.</span>
     <span>NEW DROP — FALL 01 AVAILABLE NOW</span>
     <span>FREE SHIPPING OVER $150</span>
     <span>LIMITED STOCK — NO RESTOCKS</span>
-    <span>DESIGNED IN-HOUSE</span>
+    <span>RAW. REBEL. REFINED.</span>
     <span>NEW DROP — FALL 01 AVAILABLE NOW</span>
     <span>FREE SHIPPING OVER $150</span>
     <span>LIMITED STOCK — NO RESTOCKS</span>
-    <span>DESIGNED IN-HOUSE</span>
   </div>
 </div>
 
 <header class="site-header">
   <div class="wrap site-header__row">
-    <a href="index.html" class="logo">Kavrix</a>
+    <a href="index.html" class="logo-mark">
+      <span class="logo-mark__icon" data-brand-mark></span>
+      <span class="logo-mark__word">Kavrix</span>
+    </a>
     <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="shop.html" aria-current="page">Shop</a>
@@ -45,7 +57,10 @@
 
 <div class="mobile-nav" id="mobileNav">
   <div class="mobile-nav__top">
-    <span class="logo">Kavrix</span>
+    <span class="logo-mark">
+      <span class="logo-mark__icon" data-brand-mark></span>
+      <span class="logo-mark__word">Kavrix</span>
+    </span>
     <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6l12 12M18 6L6 18"/></svg>
     </button>
@@ -81,8 +96,11 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-col footer-brand">
-        <span class="logo">Kavrix</span>
-        <p>Premium streetwear designed in black and white. Heavyweight fabrics. Limited runs. No restocks.</p>
+        <span class="logo-mark">
+          <span class="logo-mark__icon" data-brand-mark></span>
+          <span class="logo-mark__word">Kavrix</span>
+        </span>
+        <p>Raw. Rebel. Refined. Heavyweight distressed fabrics, hand-finished hardware. Limited runs. No restocks.</p>
       </div>
       <div class="footer-col">
         <h4>Shop</h4>

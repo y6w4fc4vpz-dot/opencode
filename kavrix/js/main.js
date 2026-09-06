@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  initBrandMarks()
   initMobileNav()
   initModals()
   initFeaturedGrid()
@@ -7,6 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
   initCartPage()
   initNewsletter()
 })
+
+/* ---------- Shared: brand cross mark ---------- */
+function initBrandMarks() {
+  document.querySelectorAll("[data-brand-mark]").forEach((el) => {
+    el.innerHTML = getBrandMark()
+  })
+}
 
 /* ---------- Shared: mobile nav ---------- */
 function initMobileNav() {
@@ -79,7 +87,8 @@ function renderProductCard(p) {
 function initFeaturedGrid() {
   const grid = document.getElementById("featuredGrid")
   if (!grid) return
-  const featured = PRODUCTS.slice(0, 4)
+  const featuredIds = ["legacy-moto-jacket", "rebel-flare-denim", "void-hoodie", "ripped-baggy-jorts"]
+  const featured = featuredIds.map(getProductById).filter(Boolean)
   grid.innerHTML = featured.map(renderProductCard).join("")
 }
 
@@ -139,9 +148,20 @@ function initProductPage() {
 
   const was = product.compareAt ? `<span class="was">${formatPrice(product.compareAt)}</span>` : ""
 
+  const calloutsHtml = (product.callouts || [])
+    .map(
+      (c) => `
+        <div class="callout is-${c.side}" style="top:${c.top}%;">
+          ${c.side === "left" ? `<span class="callout__line"></span><span class="callout__dot"></span>` : `<span class="callout__dot"></span><span class="callout__line"></span>`}
+          <span>${c.text}</span>
+        </div>`,
+    )
+    .join("")
+
   container.innerHTML = `
     <div class="pd-gallery">
-      <div class="pd-gallery__main">${getProductArt(product.category)}</div>
+      <div class="pd-gallery__specbar"><span class="gothic">Kavrix</span><span>Spec 0${(PRODUCTS.indexOf(product) % 9) + 1} — ${product.categoryLabel}</span></div>
+      <div class="pd-gallery__main">${getProductArt(product.category)}${calloutsHtml}</div>
       <div class="pd-gallery__thumbs">
         ${[0, 1, 2, 3].map((i) => `<div class="pd-gallery__thumb${i === 0 ? " is-active" : ""}">${getProductArt(product.category)}</div>`).join("")}
       </div>
